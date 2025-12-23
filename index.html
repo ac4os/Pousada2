@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recanto dos Colibris | Boutique Hotel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">RECANTO<span>COLIBRIS</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#gallery">Espaços</a></li>
+            <li><button class="btn-reserve" onclick="openModal()">Reservar</button></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content fade-up">
+            <span class="subtitle">Santa Teresa - Espírito Santo</span>
+            <h1>Silêncio, Luxo & Natureza.</h1>
+            <p>Uma experiência sensorial única nas montanhas capixabas.</p>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </header>
+
+    <section id="experience" class="split-section">
+        <div class="split-image reveal" style="background-image: url('imagens/natureza-jardim.jpg');"></div>
+        <div class="split-text reveal">
+            <h2>Refúgio Natural</h2>
+            <p>Desacelere. Aqui o tempo é medido pelo canto dos pássaros e pelo balanço das árvores. Oferecemos privacidade absoluta e conforto de alto padrão.</p>
+            <ul class="clean-list">
+                <li>• Cachoeira Privativa</li>
+                <li>• Gastronomia Afetiva</li>
+                <li>• Conexão Total</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="video-showcase">
+        <div class="container reveal">
+            <div class="video-wrapper">
+                <video controls poster="imagens/lazer-piscina.jpg">
+                    <source src="imagens/video-apresentacao.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+            </div>
+            <div class="video-caption">
+                <h3>Atmosfera Única</h3>
+                <p>Dê o play e sinta a brisa da serra.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="gallery-header reveal">
+                <h2>Nossos Ambientes</h2>
+                <p>Design integrado à natureza.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="g-item big reveal" style="background-image: url('imagens/quarto-chale.jpg');">
+                    <div class="overlay">
+                        <span>Acomodações</span>
+                        <h3>Suítes Master</h3>
+                    </div>
+                </div>
+                <div class="g-item reveal" style="background-image: url('imagens/lazer-piscina.jpg');">
+                    <div class="overlay">
+                        <span>Relax</span>
+                        <h3>Piscinas Naturais</h3>
+                    </div>
+                </div>
+                <div class="g-item reveal" style="background-image: url('imagens/cafe-detalhe.jpg');">
+                    <div class="overlay">
+                        <span>Sabor</span>
+                        <h3>Café Colonial</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3>Planeje sua Estadia</h3>
+                <p>Fale diretamente conosco pelo WhatsApp</p>
+            </div>
+            <div class="modal-body">
+                <div class="option-card" onclick="window.open('https://wa.me/5527999999999?text=Olá, gostaria de saber sobre pacotes para Casais', '_blank')">
+                    <h4>💑 Pacote Casal</h4>
+                    <p>Lua de mel e romântico</p>
+                </div>
+                <div class="option-card" onclick="window.open('https://wa.me/5527999999999?text=Olá, gostaria de saber sobre pacotes para Família', '_blank')">
+                    <h4>👨‍👩‍👧‍👦 Pacote Família</h4>
+                    <p>Grupos e lazer completo</p>
+                </div>
+                <div class="option-card" onclick="window.open('https://wa.me/5527999999999?text=Olá, gostaria de verificar disponibilidade geral', '_blank')">
+                    <h4>📅 Verificar Datas</h4>
+                    <p>Consultar calendário</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Recanto dos Colibris. Santa Teresa - ES.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
